@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 //Service of static directories
 app.use( express.static(path.join(__dirname, 'public')) );
-app.use( '/libs', express.static(path.join(__dirname, 'libs')) );
+app.use( '/three', express.static(path.join(__dirname, 'node_modules/three')) );
 app.use( '/assets', express.static(path.join(__dirname, 'assets')) );
 
 
